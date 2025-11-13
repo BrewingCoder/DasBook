@@ -1,3 +1,8 @@
 <Solution>
+  <Folder Name="/Build/">
+    <File Path="build.cake" />
+    <File Path="build.ps1" />
+  </Folder>
+  <Project Path="DasBook.Tests/DasBook.Tests.csproj" />
   <Project Path="DasBook/DasBook.csproj" />
 </Solution>
