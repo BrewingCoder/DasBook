@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/Build/">
     <File Path=".config/dotnet-tools.json" />
+    <File Path=".github/workflows/build.yml" />
     <File Path="build.cake" />
     <File Path="build.ps1" />
   </Folder>
