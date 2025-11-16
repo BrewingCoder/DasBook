@@ -2,10 +2,12 @@
   <Folder Name="/Build/">
     <File Path=".config/dotnet-tools.json" />
     <File Path=".github/workflows/build.yml" />
+    <File Path=".github/workflows/manual_build.yml" />
     <File Path=".gitignore" />
     <File Path="build.cake" />
     <File Path="build.ps1" />
   </Folder>
+  <Project Path="DasBook.Model/DasBook.Model.csproj" />
   <Project Path="DasBook.Tests/DasBook.Tests.csproj" />
   <Project Path="DasBook/DasBook.csproj" />
 </Solution>
