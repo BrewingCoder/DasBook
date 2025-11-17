@@ -26,6 +26,11 @@ jobs:
             dotnet tool install -g dotnet-coverage
             
         - name: Run Cake Build
+          env:
+            SONAR_PROJECT_KEY: ${{ secrets.SONAR_PROJECT_KEY }}
+            SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+            SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+            BUILD_VERSION: "1.0.${{ github.run_number }}"
           run: |
             dotnet-cake --target=Analyze --verbosity=diagnostic
             

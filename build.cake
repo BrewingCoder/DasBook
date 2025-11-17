@@ -47,13 +47,13 @@ Task("Sonar-Begin")
 {
     var sonarSettings = new SonarBeginSettings
     {
-        Key = EnvironmentVariable("secrets.SONAR_PROJECT_KEY"),
-        Url = EnvironmentVariable("secrets.SONAR_HOST_URL"),
-        Token = EnvironmentVariable("secrets.SONAR_TOKEN"),
+        Key = EnvironmentVariable("SONAR_PROJECT_KEY"),
+        Url = EnvironmentVariable("SONAR_HOST_URL"),
+        Token = EnvironmentVariable("SONAR_TOKEN"),
         VsCoverageReportsPath = "coverage.xml",
         VsTestReportsPath = "./Dasbook.Tests/TestResults/TestResults.trx",
         UseCoreClr = true,
-        Version = @"1.0." + EnvironmentVariable("github.run_number"),
+        Version = @"1.0." + EnvironmentVariable("BUILD_VERSION"),
     };
 
     SonarBegin(sonarSettings);
@@ -65,7 +65,7 @@ Task("Sonar-End")
 {
     SonarEnd(new SonarEndSettings
     {
-        Token = EnvironmentVariable("secrets.SONAR_TOKEN"),
+        Token = EnvironmentVariable("SONAR_TOKEN"),
     });
 });
 
