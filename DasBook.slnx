@@ -7,6 +7,10 @@
     <File Path="build.cake" />
     <File Path="build.ps1" />
   </Folder>
+  <Folder Name="/Misc/">
+    <File Path="LICENSE.txt" />
+    <File Path="README.md" />
+  </Folder>
   <Project Path="DasBook.Model/DasBook.Model.csproj" />
   <Project Path="DasBook.Tests/DasBook.Tests.csproj" />
   <Project Path="DasBook/DasBook.csproj" />

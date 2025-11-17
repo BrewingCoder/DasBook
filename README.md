@@ -1,1 +1,11 @@
 # DasBook
+[![Bugs](https://sonar.brewingcoder.com/api/project_badges/measure?project=BrewingCoder_DasBook_3d740e34-8d0f-4712-bb2b-9b5f743ff2ce&metric=bugs&token=sqb_1a2fd4d8fd11335126e3abdaa5f1ae10d85e47e2)](https://sonar.brewingcoder.com/dashboard?id=BrewingCoder_DasBook_3d740e34-8d0f-4712-bb2b-9b5f743ff2ce)
+[![Code Smells](https://sonar.brewingcoder.com/api/project_badges/measure?project=BrewingCoder_DasBook_3d740e34-8d0f-4712-bb2b-9b5f743ff2ce&metric=code_smells&token=sqb_1a2fd4d8fd11335126e3abdaa5f1ae10d85e47e2)](https://sonar.brewingcoder.com/dashboard?id=BrewingCoder_DasBook_3d740e34-8d0f-4712-bb2b-9b5f743ff2ce)
+[![Vulnerabilities](https://sonar.brewingcoder.com/api/project_badges/measure?project=BrewingCoder_DasBook_3d740e34-8d0f-4712-bb2b-9b5f743ff2ce&metric=vulnerabilities&token=sqb_1a2fd4d8fd11335126e3abdaa5f1ae10d85e47e2)](https://sonar.brewingcoder.com/dashboard?id=BrewingCoder_DasBook_3d740e34-8d0f-4712-bb2b-9b5f743ff2ce)
+[![Security Rating](https://sonar.brewingcoder.com/api/project_badges/measure?project=BrewingCoder_DasBook_3d740e34-8d0f-4712-bb2b-9b5f743ff2ce&metric=security_rating&token=sqb_1a2fd4d8fd11335126e3abdaa5f1ae10d85e47e2)](https://sonar.brewingcoder.com/dashboard?id=BrewingCoder_DasBook_3d740e34-8d0f-4712-bb2b-9b5f743ff2ce)
+
+[![Quality Gate Status](https://sonar.brewingcoder.com/api/project_badges/measure?project=BrewingCoder_DasBook_3d740e34-8d0f-4712-bb2b-9b5f743ff2ce&metric=alert_status&token=sqb_1a2fd4d8fd11335126e3abdaa5f1ae10d85e47e2)](https://sonar.brewingcoder.com/dashboard?id=BrewingCoder_DasBook_3d740e34-8d0f-4712-bb2b-9b5f743ff2ce)
+[![Coverage](https://sonar.brewingcoder.com/api/project_badges/measure?project=BrewingCoder_DasBook_3d740e34-8d0f-4712-bb2b-9b5f743ff2ce&metric=coverage&token=sqb_1a2fd4d8fd11335126e3abdaa5f1ae10d85e47e2)](https://sonar.brewingcoder.com/dashboard?id=BrewingCoder_DasBook_3d740e34-8d0f-4712-bb2b-9b5f743ff2ce)
+
+
+Nothing to see here yet. Don't mind me.  Playing with MAUI, Avalonia, and SonarQube integration.
