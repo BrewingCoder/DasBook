@@ -53,7 +53,7 @@ Task("Sonar-Begin")
         VsCoverageReportsPath = "coverage.xml",
         VsTestReportsPath = "./Dasbook.Tests/TestResults/TestResults.trx",
         UseCoreClr = true,
-        Version = @"1.0." + EnvironmentVariable("BUILD_VERSION"),
+        Version = EnvironmentVariable("BUILD_VERSION"),
     };
 
     SonarBegin(sonarSettings);
@@ -75,7 +75,7 @@ Task("Test")
     .ContinueOnError()
     .Does(() =>
 {
-    DotNetTest("Dasbook.slnx", new DotNetTestSettings
+    DotNetTest("DasBook.slnx", new DotNetTestSettings
     {
         DiagnosticOutput = true,
         Configuration = configuration,
