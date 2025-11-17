@@ -32,5 +32,6 @@ jobs:
             SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
             BUILD_VERSION: "1.0.${{ github.run_number }}"
           run: |
-            dotnet-cake --target=Analyze --verbosity=diagnostic
+            ls -ls
+            dotnet-cake --target=Analyze 
             

@@ -75,7 +75,7 @@ Task("Test")
     .ContinueOnError()
     .Does(() =>
 {
-    DotNetTest("./Dasbook.slnx", new DotNetTestSettings
+    DotNetTest("Dasbook.slnx", new DotNetTestSettings
     {
         DiagnosticOutput = true,
         Configuration = configuration,
@@ -101,7 +101,7 @@ Task("Build")
     {
    
     
-    DotNetBuild("./Dasbook.slnx",new DotNetBuildSettings
+    DotNetBuild("DasBook.slnx",new DotNetBuildSettings
     {
         Configuration = configuration,
     });
