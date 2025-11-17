@@ -8,6 +8,11 @@ var configuration = Argument("configuration", "Debug");
 Task("LoadEnvFile")
     .Does(() =>
 {
+    if(BuildSystem.GitHubActions.IsRunningOnGitHubActions)
+    {
+        Information("Skipping loading .env file on GitHub Actions.");
+        return;
+    }
     var envFilePath = MakeAbsolute(File("./DasBook.env")); // Assuming .env is in the root
 
     if (FileExists(envFilePath))

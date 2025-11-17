@@ -7,6 +7,7 @@ on:
 
 
 jobs:
+  if: false # Disable this workflow until further notice
   build:
     name: Build Test and analyze
     runs-on: windows-latest

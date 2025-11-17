@@ -18,3 +18,15 @@ jobs:
           uses: actions/setup-dotnet@v4
           with:
             dotnet-version: '10.0.x' # Specify the desired .NET 10 version
+        
+        - name: Setup .NET Tools
+          run: |
+            dotnet tool install -g Cake.Tool 
+            dotnet tool install -g dotnet-sonarscanner
+            dotnet tool install -g dotnet-coverage
+            echo "::add-path::${HOME}/.dotnet/tools"
+            
+        - name: Run Cake Build
+          run: |
+            cake build.cake --target=Analyze --verbosity=diagnostic
+            
