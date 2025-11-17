@@ -27,5 +27,5 @@ jobs:
             
         - name: Run Cake Build
           run: |
-            dotnet cake --target=Analyze --verbosity=diagnostic
+            dotnet-cake --target=Analyze --verbosity=diagnostic
             
