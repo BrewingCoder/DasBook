@@ -1,12 +1,10 @@
-name: manual triggered workflow to test Cake
+name: SonarQube Analyze
 
 on:
-    workflow_dispatch: 
-      inputs:
-        example_input:
-          description: 'An example input'
-          required: false
-          default: 'default value'
+  push:
+    branches:
+      - master
+    
 jobs:
   build:
     name: Manual Build Test
