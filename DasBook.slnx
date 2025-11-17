@@ -6,6 +6,7 @@
     <File Path=".gitignore" />
     <File Path="build.cake" />
     <File Path="build.ps1" />
+    <File Path="qodana.yaml" />
   </Folder>
   <Project Path="DasBook.Model/DasBook.Model.csproj" />
   <Project Path="DasBook.Tests/DasBook.Tests.csproj" />
