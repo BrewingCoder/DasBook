@@ -53,6 +53,7 @@ Task("Sonar-Begin")
         VsCoverageReportsPath = "coverage.xml",
         VsTestReportsPath = "./Dasbook.Tests/TestResults/TestResults.trx",
         UseCoreClr = true,
+        Version = @"1.0." + EnvironmentVariable("github.run_number"),
     };
 
     SonarBegin(sonarSettings);
