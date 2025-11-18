@@ -80,4 +80,31 @@ public class TestUniverseFields
         columnAttribute.ShouldNotBeNull();
         columnAttribute.TypeName.ShouldBe("varchar(Max)");
     }
+    
+    [Fact]
+    public void Universe_TimeScale_Field_Defaults_To_Correct_Enum_Value()
+    {
+        // Arrange
+        var universe = new DasBook.Model.Universe();
+
+        // Act
+        var timeScale = universe.TimeScale;
+
+        // Assert
+        timeScale.ShouldBe(DasBook.Model.Enums.TimeScaleMode.YearMonthDay);
+    }
+    [Fact]
+    public void Universe_TimeScale_Field_Can_Be_Set_And_Retrieved()
+    {
+        // Arrange
+        var universe = new DasBook.Model.Universe();
+        var expectedTimeScale = DasBook.Model.Enums.TimeScaleMode.BigFloat;
+
+        // Act
+        universe.TimeScale = expectedTimeScale;
+        var actualTimeScale = universe.TimeScale;
+
+        // Assert
+        actualTimeScale.ShouldBe(expectedTimeScale);
+    }
 }
